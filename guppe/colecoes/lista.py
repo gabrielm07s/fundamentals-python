@@ -141,3 +141,123 @@ print(curso)
 
 lista9 = [1, 2.34, True, 'Geek', 'd', [1, 2, 3], 45456446454]
 print(lista9, type(lista9))
+
+# Iterando sobre listas
+# Loop for
+for elemento in lista1:
+    print(lista1)
+
+# Loop while
+carrinho = []
+produto = ''
+
+while produto != 'sair':
+    print('Adicione um produto na lista ou digite "sair" para sair: ')
+    produto = input()
+
+    if produto != 'sair':
+        carrinho.append(produto)
+
+for produto in carrinho:
+    print(produto)
+
+# Utilizando variáveis em listas
+numeros = [1, 2, 3, 4, 5]
+print(numeros)
+
+num1 = 1
+num2 = 2
+num3 = 4
+num4 = 4
+num5 = 5
+
+numeros = [num1, num2, num3, num4, num5]
+print(numeros)
+
+# O acesso de listas é de forma indexada, por meio de índices
+cores = ['verde', 'amarelo', 'azul', 'branco']
+
+print(cores[0]) # verde
+print(cores[1]) # amarelo
+print(cores[2]) # azul
+print(cores[3]) # branco
+
+# gerando índice em for
+for indice, cor in enumerate(cores):
+    print(indice, cor)
+
+# Listas aceitam valores repetidos
+
+# Encontrar o índice de um elemento na lista
+numeros = [5, 6, 7, 8, 9, 10]
+
+print(numeros.index(6)) # 1
+
+# Podemos fazer busca dentro de um range, ou seja, qual índice começar a buscar
+print(numeros.index(6, 1)) # buscando 6 a partir do índice 1
+
+# Podemos fazer busca de range inicio / fim
+print(numeros.index(6, 3, 9)) # Busca o valor 6 entre os índices 3 e 9
+
+# Slice (Fatiamento)
+# lista[inicio:fim:passo]
+lista = [1, 2, 3, 4]
+print(lista[1:]) # inicia em 1 e vai até o final
+print(lista[:1]) # inicia em 0 e vai até o índice 1
+print(lista[::2]) # do inicio ao fim passo 2
+
+# Invertendo valores em uma lista
+nomes = ['Geek', 'University']
+nomes[0], nomes[1] = nomes[1], nomes[0]
+print(nomes)
+
+nomes = ['Geek', 'University']
+nomes.reverse()
+print(nomes)
+
+# Soma, Máximo, Mínimo, Tamanho de uma lista
+# Se os valores forem todos inteiros ou reais
+lista = [1, 2, 3, 4, 5, 6]
+
+print(sum(lista)) # SOMA
+print(max(lista)) # MÁXIMO VALOR
+print(min(lista)) # MÍNIMO VALOR
+print(len(lista)) # TAMANHO DA LISTA
+
+# Convertendo uma lista para uma tupla
+tupla = tuple(lista)
+print(tupla, type(tupla))
+
+# Desempacotamento de listas
+lista = [1, 2, 3]
+num1, num2, num3 = lista
+print(num1, num2, num3)
+
+# Deve ser a mesma quantidade de variáveis com os valores
+
+# Copiando uma lista para outras (Shallow Copy e Deep Copy)
+# Forma 1
+
+lista = [1, 2, 3]
+print(lista)
+
+nova = lista.copy() # toda nova modificação não altera a lista anterior (Deep Copy)
+
+print(nova)
+nova.append(4)
+
+print(lista)
+print(nova)
+
+# Forma 2
+lista = [1, 2, 3]
+print(lista)
+
+nova = lista # cópia rasa (Shallow Copy)
+
+print(nova)
+
+nova.append(4)
+
+print(lista)
+print(nova)

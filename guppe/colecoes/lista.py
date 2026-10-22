@@ -197,7 +197,7 @@ print(numeros.index(6)) # 1
 print(numeros.index(6, 1)) # buscando 6 a partir do índice 1
 
 # Podemos fazer busca de range inicio / fim
-print(numeros.index(6, 3, 9)) # Busca o valor 6 entre os índices 3 e 9
+print(numeros.index(6, 0, 4)) # Busca o valor 6 entre os índices 3 e 9
 
 # Slice (Fatiamento)
 # lista[inicio:fim:passo]

@@ -34,8 +34,12 @@ total_salario = 0
 for funcionario in dados_funcionarios:
     total_salario += funcionario[2] 
 
-media_salarial = total_salario / len(dados_funcionarios)
-print(f'Média salarial: {media_salarial}')
+if len(dados_funcionarios) > 0:
+    media_salarial = total_salario / len(dados_funcionarios)
+    print(f'Média salarial: {media_salarial}')
+else:
+    print('Não existe divisão por zero')
+    raise SystemExit
 
 for funcionario in dados_funcionarios:
     if funcionario[2] > media_salarial:

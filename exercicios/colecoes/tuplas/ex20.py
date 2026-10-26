@@ -9,5 +9,6 @@ tupla = (45, 12, 89, 3, 27, 64)
 tupla_crescente = tuple(sorted(tupla))
 tupla_decrescente = tuple(sorted(tupla, reverse=True))
 
+print(f'Tupla original: {tupla}')
 print(f'Tupla ordenada: {tupla_crescente}')
 print(f'Tupla desordenada: {tupla_decrescente}')

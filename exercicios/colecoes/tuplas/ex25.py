@@ -44,5 +44,3 @@ if contato:
     print(f'\nID: {cid}, Contato: {cnome}, Telefone: {ctel}')
 else:
     print('\nContato não encontrado na agenda.')
-
-print(f'\nID: {contato[0]}, Contato: {contato[1]}, Telefone: {contato[2]}')

@@ -1,7 +1,7 @@
 import re
 import sys
 
-cpf_enviado = '11111111111'
+cpf_enviado = '21325373486'
 cpf_formatado = re.sub(
     r'[^0-9]',
     '',
@@ -39,7 +39,7 @@ segundo_digito = resultado2 if resultado2 <= 9 else 0
 
 cpf_gerado = nove_digitos_cpf + str(primeiro_digito) + str(segundo_digito)
 
-if cpf_enviado == cpf_enviado:
+if cpf_formatado == cpf_gerado:
     print(f'{cpf_enviado} é válido')
 else:
     print('CPF inválido')

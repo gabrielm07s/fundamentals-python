@@ -1,10 +1,23 @@
-letras = set()
-while True:
-    letra = input('Digite: ')
-    letras.add(letra.lower())
+"""
+Introdução a funções (def) em Python
+Funções são trechos de códigos usados para replicar determinada ação ao longo do código
+Elas podem receber valores para parâmetros (argumentos) e retornar um valor específico
+Por padrão, as funções Python retornam None (nada)
+"""
+def Print():
+    print('Várias')
 
-    if 'l' in letras:
-        print('PARABÉNS')
-        break
+def imprimir(a, b, c):
+    print(a, b, c)
 
-    print(letras)
+for i in range(5):
+    Print()
+
+imprimir(1, 2, 3) 
+
+def saudacao(nome='Sem nome'):
+    print(f'Olá, {nome}')
+
+saudacao('Luiz Otávio')
+saudacao('Maria')
+saudacao()

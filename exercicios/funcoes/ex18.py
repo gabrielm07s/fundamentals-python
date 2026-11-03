@@ -5,13 +5,12 @@ sem alterar a lista original. Prove com assert.
 def remover_duplicados(lista):
     ja_visto = []
 
-    for l in lista:
-        if l in ja_visto:
-            lista.pop(l)
-        else:
-            ja_visto.append(l)
-
-    return lista
+    for elemento in lista:
+        if elemento not in ja_visto:
+            ja_visto.append(elemento)
+    
+    return ja_visto
 
 lista = [1, 1, 2, 3, 4, 5, 5, 6]
-print(remover_duplicados(lista))
+print(f'Lista original: {lista}')
+print(f'Lista sem repetidos: {remover_duplicados(lista)}')

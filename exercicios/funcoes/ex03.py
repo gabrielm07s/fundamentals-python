@@ -10,7 +10,7 @@ def maior(a, b):
     elif a < b:
         return b
     else:
-        return 'Os dois números são iguais'
+        return a
 
 n1 = int(input('Digite o primeiro número: '))
 n2 = int(input('Digite o segundo número: '))

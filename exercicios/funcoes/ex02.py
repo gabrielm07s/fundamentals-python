@@ -5,4 +5,4 @@ def dobro(n):
     return n * 2
 
 print(f'Dobro de 7: {dobro(7)}')
-print(f'Dobro do dobro de 2: {dobro(dobro(2))}')
+print(f'Dobro do dobro de 3: {dobro(dobro(3))}')

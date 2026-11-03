@@ -10,9 +10,9 @@ def area_retangulo(base, altura):
 def area_circulo(raio):
     return math.pi * raio ** 2 
 
-base = int(input('Digite o valor da base: '))
-altura = int(input('Digite o valor da altura: '))
-raio = int(input('Digite o valor do raio: '))
+base = float(input('Digite o valor da base: '))
+altura = float(input('Digite o valor da altura: '))
+raio = float(input('Digite o valor do raio: '))
 
 print('\nResultados: ')
 print(f'Área retângulo: {area_retangulo(base, altura):.2f}')

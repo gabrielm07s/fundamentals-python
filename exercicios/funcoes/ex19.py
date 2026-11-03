@@ -3,14 +3,16 @@ Crie aplicar(funcao, lista) que devolve uma nova lista com funcao aplicada a cad
 Use com len, str.upper e uma função sua.
 """
 def aplicar(funcao, lista):
-    return funcao(lista)
+    resultado = []
 
-def triplo(lista):
-    for i, valor in enumerate(lista):
-        lista[i] = valor * 3
-    return lista
+    for item in lista:
+        resultado.append(funcao(item))
 
-lista = [1, 2, 3, 4, 5, 6]
-print(aplicar(len, lista))
-print(aplicar(str, lista))
-print(aplicar(triplo, lista))
+    return resultado
+
+def triplo(n):
+    return n * 3
+
+print(aplicar(len, ['a', 'bb']))
+print(aplicar(str.upper, ['sol']))
+print(aplicar(triplo, [1, 2]))
